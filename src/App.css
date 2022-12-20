@@ -1,3 +1,37 @@
+/*import boostrap  css */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/*import font families */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --themeGren:#049673;
+  --themeYellow: #ffc107;
+  --themeGray:#f3f3f4;
+  --footerBlack:#100c00;
+}
+.rubicFont{
+  font-family: 'Rubik', sans-serif;
+}
+.latoFont{
+  font-family: 'Lato', sans-serif;
+}
+.themeGrayBg{
+  background: var(--themeGray);
+}
+.footerBg{
+  background: var(--footerBlack);
+}
+.centerFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +69,215 @@
   to {
     transform: rotate(360deg);
   }
+}
+.greentextcolor{
+  color: var(--themeGren);
+}
+.greenBgColor{
+  background: var(--themeGren);
+}
+
+.headerBgImage{
+  background-image: url("./images/blueBg.png");
+}
+.lawBadges{
+  background : #cdeae3 !important;
+  color: var(--themeGren);
+}
+.clients{
+  width: 35px;
+}
+.client-2,.client-3{
+  position: relative;
+  right: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.client-3{
+  right: 10px;
+}
+.ratingStar{
+  font-size: 12px;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+.arrowImage{
+  width: 10%;
+  rotate: 346deg;
+  left: 30px;
+  top: 33px;
+}
+.userImage{
+  width: 53%;
+  top: -20%;
+  right: 14%;
+}
+.ellipseImage{
+  width: 10%;
+  rotate: 346deg;
+  left: -1rem;
+  bottom: 0rem;
+}
+.successRAteEllipse{
+  left: 8px;
+  width: 25%;
+  top: 47px;
+}
+.linkArrow:hover{
+  box-shadow: 0px 1px 4px 0px lightgrey;
+}
+
+.linkArrow:hover .iconOnHover{
+  color: var(--themeYellow);
+}
+.brightfilterp5{
+  filter: brightness(.5);
+}
+.netBg{
+  background-image: url("./images/netImage.png");
+}
+.footerLink a{
+  text-decoration: none;
+  color: gray;
+  line-height: 1.75;
+}
+.footerLink a:hover{
+  text-decoration: none;
+  color: var(--themeGren);
+  transition-duration: .5s;
+}
+.footerl1{
+  border-top: 1px solid #1f0f03;
+  border-right: 1px solid #1f0f03;
+  border-bottom: 1px solid #1f0f03;
+}
+
+.footerR1{
+  border-top: 1px solid #1f0f03;
+  border-bottom: 1px solid #1f0f03;
+}
+
+
+/*media for mobile */
+@media only screen and (max-width: 600px) {
+  .signUpBtn {
+    width: 100% !important;
+  }
+  .userImage{
+    width: 60%;
+    top: -20%;
+    right: 3%;
+  }
+  .successRateContainer{
+    padding-top: 8rem;
+  }
+  .successRAteEllipse{
+    left: 8px;
+    width: 25%;
+    top: 17%;
+  }
+  .no_cases{
+    padding-top: 4rem;
+  }
+  .no_award{
+    padding-bottom: 4rem;
+  }
+  .linkArrow{
+    width: 100% !important;
+  }
+  .footerMap{
+    text-align: center !important;
+    width: 100%;
+  }
+  .socialIcons{
+    justify-content: center !important;
+  }
+}
+
+
+
+/*version 1.0 */
+
+
+.bgImage{
+  background-image: url("./images/slideImage-1.jpg");
+  height: 100VH;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.speechImage{
+  background-image: url("./images/slideImage-2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.EmergingBg{
+  background-image: url("./images/slideImage-3.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.GITbgImage{
+  position: relative;
+
+  /**/
+  /*background-repeat: no-repeat;*/
+  /*background-position: top;*/
+  /*background-size: cover;*/
+}
+.GITbgImage:before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-image: url("./images/getInTouch.jpg");
+  filter: brightness(.5);
+}
+
+.ACCELERATED_GROWTH{
+  font-size: 5rem;
+  text-shadow: 3px -3px 3px black;
+}
+.git{
+  font-size: 3rem;
+  text-shadow: 1px -1px 1px black;
+}
+.WE_EXIST{
+  font-size: 5rem;
+  letter-spacing: -3px;
+  word-spacing: 15px;
+}
+.CoFounderModel{
+  font-size: 4rem;
+  letter-spacing: -3px;
+  word-spacing: 15px;
+}
+.Emerging_India_Heading{
+  color: #d74237;
+  width: 60%;
+}
+.PartnerWith{
+  height: 100px;
+  box-shadow: 0px 0px 3px 1px #0000006b
+}
+tbody tr{
+  border: unset !important;
+  border-width: 0px !important;
+}
+
+#MainHeader{
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+button.owl-prev {
+  border: 1px solid gray!important;
+  width: 30px;
+}
+button.owl-next {
+  border: 1px solid gray!important;
+  width: 30px;
 }
