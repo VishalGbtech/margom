@@ -37,8 +37,9 @@ function App() {
             <EmergingIndia/>
             <PartnerShipModels dotImage={dottedImage} promotpr={Promoter} />
             <HowWeWork w1={w1} w2={w2} w3={w3} />
-            <GetInTouch bgImage={GetinTouch}  fbicon={faFacebook} instaIcon={faInstagram} linkedInIcon={faLinkedin} />
             <EcosystemOfNetwork DR={DR} om={newLOGo} />
+            <GetInTouch bgImage={GetinTouch}  fbicon={faFacebook} instaIcon={faInstagram} linkedInIcon={faLinkedin} />
+
         </div>
     );
 }

@@ -1,35 +1,77 @@
 import React from "react";
 import {Button} from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function CoFounderModel(props) {
-    const AllParteners = (AllPartenersPageId)=>{
+
+
+    const AllParteners = (AllPartenersPageId) => {
         const CoFounderModelId = document.getElementById('CoFounderModel');
         const b = document.getElementById(`${AllPartenersPageId}`);
         b.style.display = 'flex';
         CoFounderModelId.style.display = 'none';
     }
-    return(
+
+    let PartenersArray = localStorage.getItem('Parteners');
+    let PartenersArr = JSON.parse(PartenersArray);
+    console.log(PartenersArr);
+
+    const Parteners = PartenersArr.map((value, index) => {
+        if (value.redirectPageId !== 'CoFounderModel') {
+            const PageHandel = (SelectedPageId) => {
+                console.log(` this is page ${SelectedPageId}`)
+           if ( value.redirectPageId === SelectedPageId ){
+               document.getElementById(SelectedPageId).style.display = 'block';
+               document.getElementById('CoFounderModel').style.display = 'none';
+           }
+
+            }
+            return <div className='col-md-4'>
+                <div className="PartnerWith border px-3 py-2 rounded" key={index}>
+                    <h4>{value.PT}</h4>
+                    <div className="text-end">
+                        <Button variant="dark" size='sm'
+                                onClick={() => PageHandel(value.redirectPageId)}>{value.more}</Button>
+                    </div>
+                </div>
+            </div>
+        }
+    });
+    return (
         <>
-            <div className="container-fluid rubicFont " id='CoFounderModel' style={{height:'100vh', overflow: 'hidden', display:props.display}}>
+            <div className="container-fluid rubicFont " id='CoFounderModel' style={{display: props.display}}>
                 <div className=" row">
                     <div className="col-md-6">
-                        <img src={props.model} className='w-100' alt=""/>
+                        <img src={props.model} className='w-75' alt=""/>
                     </div>
-                    <div className="col-md-6 text-start" style={{ padding:'2rem 3rem'}}>
-                        <div className="mt-5 pt-4">
+                    <div className="col-md-6 text-start" style={{padding: '2rem 1rem'}}>
+                        <div className="">
                             <h1 className='CoFounderModel '>Co-Founder Model</h1>
-                            <p className='latoFont'>For Entrepreneurs Saying: “I have an
-                                idea, but mindful it takes different
-                                sets of skill to grow and scale.</p>
+                            <p className='latoFont'><b>For Entrepreneurs Saying: </b> “I have an idea, but be mindful it takes different skills to grow and scale.</p>
+                            <p className='latoFont'><b>Our Approach: </b>  Developing great ideas, needs great Minds, we scan the capability and universe we
+                                exist in, and using technology and funding we ensure we build MVPs, and put it
+                                through our rigid process of validating</p>
+                            <p className='latoFont'>MVPs in the real world. If all goes well, the Studio “spins off” the new venture- meaning the Studio
+                                recognizes this new company they’ve developed could be huge and now they along with the CoFounder find a team and resources to run it as an independent startup venture.
+                            </p>
                             <div className="">
-                                <Button variant="dark" className="text-white" >Learn More <FontAwesomeIcon className='ms-2' icon={props.arrowIcon} /></Button>
-                                <Button variant="dark" className="text-white ms-3" id='CoPromoterModelBackToAll' onClick={() => {AllParteners(props.AllParteners)}}>Back To View All </Button>
+                                {/*<Button variant="dark" className="text-white" >Learn More <FontAwesomeIcon className='ms-2' icon={props.arrowIcon} /></Button>*/}
+                                <Button variant="dark" className="text-white ms-3" id='CoPromoterModelBackToAll'
+                                        onClick={() => {
+                                            AllParteners(props.AllParteners)
+                                        }}>Back To View All </Button>
 
                             </div>
 
                         </div>
                     </div>
+                </div>
+                <div className="row py-3 justify-content-around">
+                    <div className="col-10 ">
+                        <div className="row">
+                            {Parteners}
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>

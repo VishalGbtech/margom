@@ -28,7 +28,7 @@ export default function  EcosystemOfNetwork(props) {
                     <div className="">
                         <a href="./">
                             <div className="col-12 mt-3">
-                                <img src={props.om} style={{width:'20%'}} alt=""/>
+                                {/*<img src={props.om} style={{width:'20%'}} alt=""/>*/}
                                 {/*<h1 className='d-flex text-white py-3'>MARG <img src={props.om} style={{width:'45px'}} alt=""/></h1>*/}
                             </div>
                         </a>

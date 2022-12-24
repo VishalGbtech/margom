@@ -4,6 +4,9 @@ import {Button} from "react-bootstrap";
 // import Components
 import CoPromoterModel from "./CopromoterModel";
 import CoFounderModel from "./CoFounderModel";
+
+import HiredModel from './HiredModel';
+import BuildModel from './BuildModel';
 // import CoPromoterModel from "./CoPromoterModel";
 // import CoFounderModel from "./CoFounderModel";
 
@@ -13,12 +16,12 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 // import  images
 import Promoter from "../images/promoter.jpg";
 import model from "../images/model.jpg";
-
+import HiredModelImage from '../images/bguserwithGreen.png';
+import BuildModelImage from '../images/BuildModel1.jpg';
 
 export default function PartnerShipModels(props) {
 
-
-    const ToggleComponet = ( pageId) => {
+    const ToggleComponet = (pageId) => {
         const OurPartnershipPageId = document.getElementById('PartnershipModel');
         const partnersPageId = document.getElementById(pageId);
         if (partnersPageId.style.display === 'none') {
@@ -31,19 +34,22 @@ export default function PartnerShipModels(props) {
 
     const PartenersArray = [
         {PT: 'Co-Promoter Model', more: 'Learn More', redirectPageId: 'CoPromoterModel'},
-        {PT: 'Build Model', more: 'Learn More', redirectPageId: 'not created 1'},
-        {PT: 'Hired Model', more: 'Learn More', redirectPageId: 'not created 2'},
+        {PT: 'Build Model', more: 'Learn More', redirectPageId: 'BuildModel'},
+        {PT: 'Hired Model', more: 'Learn More', redirectPageId: 'HiredModel'},
         {PT: 'Co-Founder Model', more: 'Learn More', redirectPageId: 'CoFounderModel'}
     ];
+    localStorage.setItem("Parteners", JSON.stringify(PartenersArray));
 
     const Parteners = PartenersArray.map((value, index) => {
-        let learnBtn = <Button variant="dark" onClick={() => ToggleComponet( value.redirectPageId)}
+        let learnBtn = <Button variant="dark" onClick={() => ToggleComponet(value.redirectPageId)}
                                size='sm'>{value.more}</Button>;
         return <div className="border pt-2 px-3 mb-3 rounded PartnerWith" key={index}>
             <h2>{value.PT}</h2>
             <div className="text-end">{learnBtn}</div>
         </div>
     })
+
+
     return (
         <>
             <div className="container-fluid rubicFont" id='ourPartnership'
@@ -60,7 +66,10 @@ export default function PartnerShipModels(props) {
                     </div>
                 </div>
                 <CoPromoterModel promotpr={Promoter} display='none' AllParteners='PartnershipModel'/>
-                <CoFounderModel model={model} arrowIcon={faChevronRight} display='none' AllParteners='PartnershipModel'/>
+                <BuildModel promotpr={BuildModelImage} display='none' AllParteners='PartnershipModel'/>
+                <HiredModel HiredModelImage={HiredModelImage} display='none' AllParteners='PartnershipModel'/>
+                <CoFounderModel model={model} arrowIcon={faChevronRight} display='none'
+                                AllParteners='PartnershipModel'/>
             </div>
 
         </>

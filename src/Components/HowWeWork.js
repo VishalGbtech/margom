@@ -15,7 +15,13 @@ export default function HowWeWork(props) {
                 <div className="row px-3 text-start">
                     <div className="col-12  px-5 pt-5 pb-4 text-white">
                         <h1 className=''>How we Work</h1>
-                        <p className='latoFont w-75'>After an initial screening of potential partner companies, we engage with them for 90 days to evaluate them thoroughly, using some of our AI-Driven assessment models. The post we onboard the companies in MARG'Om Studio in either of our four models</p>
+                        <p className='latoFont w-75'>We will after initial screening shortlist companies and engage with them for 90 days to evaluate
+                            them thoroughly. The post we onboard the companies in MARG'Om Studio in either of our 4 models</p>
+                        <p className='latoFont w-75'>Our mentors are guides as well as investors in our accelerator and will work closely with our
+                            portfolio companies. We will engage with these companies for one year working with companies in
+                            terms of technology marketing branding strategy finance, Governance, and Capability Building and
+                            evolving through growth enablers.
+                        </p>
                     </div>
                     {images}
                     {/*<div className="">*/}
