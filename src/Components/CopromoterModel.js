@@ -53,7 +53,7 @@ export default function CoPromoterModel(props) {
     return (
         <>
             <div className="container-fluid rubicFont " id='CoPromoterModel'
-                 style={{ display: props.display}}>
+                 style={{ display: props.display, background: '#bbbbbba3'}}>
                 <div className=" row">
 
                     <div className="col-md-7 text-start CoPromoterModelCol" style={{padding: '2rem'}}>
@@ -71,16 +71,12 @@ export default function CoPromoterModel(props) {
 
                     </div>
                     <div className="col-md-5">
-                        <img src={props.promotpr} className='w-100' alt=""/>
+                        <img src={props.coPromoterModel} className='w-100 me-3 my-3' alt=""/>
                     </div>
                 </div>
                 <div className="row py-3 justify-content-around">
                     {Parteners}
-                    {/*<div className="col-10 ">*/}
-                    {/*    <div className="row">*/}
-                    {/*       */}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+
                 </div>
             </div>
         </>

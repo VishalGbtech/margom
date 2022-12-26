@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Header(props) {
     const scollToRef = useRef();
-    const MenuArray = ['Home', 'Services', 'Lawyers', 'Blog', 'About' ];
+    const MenuArray = ['Home', 'Services', 'Associates', 'Blog', 'About' ];
     const menu = MenuArray.map((item, index)=>{
         return <li className='me-1 menuItem' key={index} onClick={() => scollToRef.current.scrollIntoView()} style={{cursor:'pointer'}}>{item}</li>
     })

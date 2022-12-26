@@ -14,10 +14,10 @@ import BuildModel from './BuildModel';
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 
 // import  images
-import Promoter from "../images/promoter.jpg";
-import model from "../images/model.jpg";
-import HiredModelImage from '../images/bguserwithGreen.png';
-import BuildModelImage from '../images/BuildModel1.jpg';
+import coPromoterModel from '../images/coPromoter.png';
+import coFoundermodel from "../images/coFounderModel.png";
+import HiredModelImage from '../images/HiredModel.png';
+import BuildModelImage from '../images/pat-BuildModel.png';
 
 export default function PartnerShipModels(props) {
 
@@ -35,15 +35,15 @@ export default function PartnerShipModels(props) {
     const PartenersArray = [
         {PT: 'Co-Promoter Model',EntrepreneursSaying:'I have an MVP but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives', more: 'Learn More', redirectPageId: 'CoPromoterModel'},
         {PT: 'Build Model',EntrepreneursSaying:'I have a great idea and worked on MVP, but lacked specific resources and expertise to scale and grow.', more: 'Learn More', redirectPageId: 'BuildModel'},
-        {PT: 'Hired Model',EntrepreneursSaying:', I have an MVP, capital, and market to grow but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives. ', more: 'Learn More', redirectPageId: 'HiredModel'},
-        {PT: 'Co-Founder Model',EntrepreneursSaying:'I have an idea, but be mindful it takes different skills to grow and scale.', more: 'Learn More', redirectPageId: 'CoFounderModel'}
+        {PT: 'Hired Model',EntrepreneursSaying:'I have an MVP, capital, and market to grow but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives. ', more: 'Learn More', redirectPageId: 'HiredModel'},
+        {PT: 'Co-Founder Model',EntrepreneursSaying:'I have an idea, but be mindful it takes different skills to grow and scale it takes different skills to grow and scale.', more: 'Learn More', redirectPageId: 'CoFounderModel'}
     ];
     localStorage.setItem("Parteners", JSON.stringify(PartenersArray));
 
     const Parteners = PartenersArray.map((value, index) => {
         let learnBtn = <Button variant="dark"  className='mb-2' onClick={() => ToggleComponet(value.redirectPageId)}
                                size='sm'>{value.more}</Button>;
-        return <div className="border pt-2 px-3 mb-3 rounded PartnerWith" key={index}>
+        return <div className="border pt-2 px-3 mb-3 rounded PartnerWith" style={{background:' #9f9f9fcf'}} key={index}>
             <h2>{value.PT}</h2>
             <div className="text-end">{learnBtn}</div>
         </div>
@@ -52,21 +52,21 @@ export default function PartnerShipModels(props) {
 
     return (
         <>
-            <div className="container-fluid rubicFont" id='ourPartnership'
-                 style={{background: '#bbbbbba3', padding: '2rem 3rem'}}>
-                <div className="row bgdotImage" id='PartnershipModel'>
+            <div className="container-fluid rubicFont bgdotImage" id='ourPartnership'
+                 style={{padding: '2rem 3rem'}}>
+                <div className="row " id='PartnershipModel'>
                     <div className=" col-md-6 text-start">
-                        <h1 className='py-3 w-100 ourPartnershipHeading' style={{fontSize:'2.5rem'}}>Our Partnership Models</h1>
+                        <h1 className='py-3 w-100 ourPartnershipHeading text-white' style={{fontSize:'2.5rem'}}>Our Partnership Models</h1>
                         {/*<img src={props.dotImage} className='w-25' alt=""/>*/}
                     </div>
                     <div className="col-md-6 text-start">
                         {Parteners}
                     </div>
                 </div>
-                <CoPromoterModel promotpr={Promoter} display='none' AllParteners='PartnershipModel'/>
+                <CoPromoterModel coPromoterModel={coPromoterModel} display='none' AllParteners='PartnershipModel'/>
                 <BuildModel promotpr={BuildModelImage} display='none' AllParteners='PartnershipModel'/>
                 <HiredModel HiredModelImage={HiredModelImage} display='none' AllParteners='PartnershipModel'/>
-                <CoFounderModel model={model} arrowIcon={faChevronRight} display='none'
+                <CoFounderModel coFoundermodel={coFoundermodel} arrowIcon={faChevronRight} display='none'
                                 AllParteners='PartnershipModel'/>
             </div>
 

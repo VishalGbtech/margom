@@ -16,7 +16,7 @@ export default function GetInTouch(props) {
                 <div className="row mt-4 position-relative">
                     <h1 className='git ps-5 pt-3 text-start w-75'>Get in touch!</h1>
                     <div className="col-12 mt-4 pt-3 px-md-5 px-4" style={{textAlign: 'justify',textShadow: '2px 2px 2px #727272a6'}}>
-                        <p className='w-75 getInToutchDetails '>Our Approach : Developing great ideas needs great Minds. We scan the capability to our disposal. Using technology and funding, we ensure and build MVPs and put them through our rigorous process of validating MVPs in the real world. If all goes well, the Studio “spins off” the new venture- meaning the Studio recognizes this new company they’ve developed that could be huge. Now along with the Co-Founder, they find a team and resources to run it as an independent startup venture.</p>
+                        <p className='w-75 getInToutchDetails '><b>Our Approach :</b> Developing great ideas needs great Minds. We scan the capability to our disposal. Using technology and funding, we ensure and build MVPs and put them through our rigorous process of validating MVPs in the real world. If all goes well, the Studio “spins off” the new venture- meaning the Studio recognizes this new company they’ve developed that could be huge. Now along with the Co-Founder, they find a team and resources to run it as an independent startup venture.</p>
 
                     </div>
                     <div className="col-md-7"></div>

@@ -67,9 +67,9 @@ export default function WhyWeExist(props) {
                         {/*<h1 className='d-flex text-white py-3'>MARG <img src={props.om} style={{width:'45px'}} alt=""/></h1>*/}
                     </div>
                     <div className="col-md-7 text-start WE_EXIST_MAIN" style={{background:'#d74237a3', padding:'2rem 3rem'}}>
-                        <h1 className='WE_EXIST border-bottom pb-2 mb-3 border-dark'>WHY WE EXIST</h1>
-                        <h2> MARG'Om Accelerator Studio helps scale companies in a variety of ways using our</h2>
-                        <p className='latoFont'>connections, enablers of Clarity, Capacity building, and Capital raising with experience in
+                        <h1 className='WE_EXIST border-bottom pb-2 mb-3 border-dark'>WHY WE EXIST ?</h1>
+                        <h2> MARG'Om Accelerator Studio - </h2>
+                        <p className='latoFont'> helps scale companies in a variety of ways using our connections, enablers of Clarity, Capacity building, and Capital raising with experience in
                             leveraging the Spirit of Entrepreneurial Indians.</p>
                         <p className='latoFont'>We Invest in the Co-creation of a sustained value proposition for holistic growth. With an
                             entrepreneurial mindset.</p>

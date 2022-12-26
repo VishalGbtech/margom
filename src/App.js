@@ -20,7 +20,7 @@ import newLOGo from './images/newLogo.png';
 import DR from './images/DR.jpg';
 import DRNew from './images/DR.jpeg';
 import dottedImage from './images/dottedImage.png';
-import Promoter from './images/promoter.jpg';
+import coPromoterModel from './images/coPromoter.png';
 import w1 from './images/w-1.jpg';
 import w2 from './images/w-2.jpg';
 import w3 from './images/w-3.jpg';
@@ -40,7 +40,7 @@ function App() {
             <Homepage/>
             <WhyWeExist om={newLOGo} DR={DR} />
             <EmergingIndia/>
-            <PartnerShipModels dotImage={dottedImage} promotpr={Promoter} />
+            <PartnerShipModels dotImage={dottedImage} coPromoterModel={coPromoterModel} />
             <OurPatrons w1={OurPatrons1} w2={OurPatrons2} w3={OurPatrons3}/>
             <HowWeWork w1={w1} w2={w2} w3={w3} />
 

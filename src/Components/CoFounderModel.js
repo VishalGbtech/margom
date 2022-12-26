@@ -39,10 +39,10 @@ export default function CoFounderModel(props) {
     });
     return (
         <>
-            <div className="container-fluid rubicFont " id='CoFounderModel' style={{display: props.display}}>
+            <div className="container-fluid rubicFont " id='CoFounderModel' style={{display: props.display, background: '#bbbbbba3'}}>
                 <div className=" row">
                     <div className="col-md-5">
-                        <img src={props.model} className='w-100' alt=""/>
+                        <img src={props.coFoundermodel} className='w-100 my-3' alt=""/>
                     </div>
                     <div className="col-md-7 text-start" style={{padding: '1rem 1rem'}}>
                         <div className="">
@@ -68,11 +68,6 @@ export default function CoFounderModel(props) {
                 </div>
                 <div className="row py-3 justify-content-around">
                     {Parteners}
-                    {/*<div className="col-10 ">*/}
-                    {/*    <div className="row">*/}
-                    {/*        */}
-                    {/*    </div>*/}
-                    {/*</div>*/}
 
                 </div>
             </div>

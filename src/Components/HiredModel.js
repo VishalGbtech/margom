@@ -49,11 +49,11 @@ export default function HiredModel(props) {
 
     return(
         <>
-            <div className="container-fluid rubicFont " id='HiredModel' style={{ display:props.display}}>
+            <div className="container-fluid rubicFont " id='HiredModel' style={{ display:props.display, background: '#bbbbbbd9'}}>
                 <div className=" row">
 
                     <div className="col-md-6 text-start" >
-                        <div className=" pt-4">
+                        <div className=" pt-4 ps-4">
                             <h1 className='CoFounderModel '>Hired Model</h1>
                             <p className='latoFont '><b>For Entrepreneurs Saying : </b> I have an MVP, capital, and market to grow but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives.</p>
 
@@ -74,7 +74,7 @@ export default function HiredModel(props) {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <img src={props.HiredModelImage} className='w-100 mt-3' alt=""/>
+                        <img src={props.HiredModelImage} className='w-75 mt-3' alt=""/>
                     </div>
                 </div>
                 <div className="row py-3 justify-content-around">
