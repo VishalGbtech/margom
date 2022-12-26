@@ -1,6 +1,5 @@
 import React from "react";
 import {Button} from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function BuildModel(props) {
     const AllParteners = (AllPartenersPageId)=>{
@@ -23,11 +22,12 @@ export default function BuildModel(props) {
                 }
 
             }
-            return <div className='col-md-4'>
+            return <div className='col-md-4 mb-3' >
                 <div className="PartnerWith border px-3 py-2 rounded" key={index}>
                     <h4>{value.PT}</h4>
+                    <h6 className='EntrepreneursSaying'>{value.EntrepreneursSaying}</h6>
                     <div className="text-end">
-                        <Button variant="dark" size='sm'
+                        <Button variant="dark" className='' size='sm'
                                 onClick={() => PageHandel(value.redirectPageId)}>{value.more}</Button>
                     </div>
                 </div>
@@ -47,12 +47,12 @@ export default function BuildModel(props) {
 
     return(
         <>
-            <div className="container-fluid rubicFont " id='BuildModel' style={{height:'100vh', overflow: 'hidden', display:props.display}}>
+            <div className="container-fluid rubicFont " id='BuildModel' style={{ display:props.display}}>
                 <div className=" row">
-                    <div className="col-md-6">
+                    <div className="col-md-5">
                         <img src={props.promotpr} className='w-100' alt=""/>
                     </div>
-                    <div className="col-md-6 text-start" style={{ padding:'2rem 3rem'}}>
+                    <div className="BuildModelCol col-md-7 mt-md-0 mt-sm-3 text-start" >
                         <div className="">
                             <h1 className='CoFounderModel '>Build Model</h1>
                             <p className='latoFont'><b>For Entrepreneurs Saying:</b> “ I have a great idea and worked on MVP, but lacked specific resources
@@ -77,11 +77,12 @@ export default function BuildModel(props) {
                     </div>
                 </div>
                 <div className="row py-3 justify-content-around">
-                    <div className="col-10 ">
-                        <div className="row">
-                            {Parteners}
-                        </div>
-                    </div>
+                    {Parteners}
+                    {/*<div className="col-10 ">*/}
+                    {/*    <div className="row">*/}
+                    {/*        */}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                 </div>
             </div>

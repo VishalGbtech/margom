@@ -1,6 +1,5 @@
 import React from "react";
 import {Button} from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function HiredModel(props) {
     const AllParteners = (AllPartenersPageId)=>{
@@ -24,9 +23,10 @@ export default function HiredModel(props) {
                 }
 
             }
-            return <div className='col-md-4'>
+            return <div className='col-md-4 mb-3'>
                 <div className="PartnerWith border px-3 py-2 rounded" key={index}>
                     <h4>{value.PT}</h4>
+                    <h6 className='EntrepreneursSaying'>{value.EntrepreneursSaying}</h6>
                     <div className="text-end">
                         <Button variant="dark" size='sm'
                                 onClick={() => PageHandel(value.redirectPageId)}>{value.more}</Button>
@@ -52,25 +52,38 @@ export default function HiredModel(props) {
             <div className="container-fluid rubicFont " id='HiredModel' style={{ display:props.display}}>
                 <div className=" row">
 
-                    <div className="col-md-6 text-start" style={{ padding:'2rem 3rem'}}>
-                        <div className="mt-5 pt-4">
+                    <div className="col-md-6 text-start" >
+                        <div className=" pt-4">
                             <h1 className='CoFounderModel '>Hired Model</h1>
-                            <p className='latoFont'>For Entrepreneurs Saying: “I have an
-                                idea, but mindful it takes different
-                                sets of skill to grow and scale.</p>
+                            <p className='latoFont '><b>For Entrepreneurs Saying : </b> I have an MVP, capital, and market to grow but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives.</p>
+
+                            <p className='latoFont'>This model sits at the intersection of the Builder Outsourced Studio Model and the
+                                Co-founder of Studio Model hence we take a Risk-Free Hired Mandate that brings together its resources, infrastructure, network, and experience to help entrepreneurs take their ideas from conception to scale, maturity and exit. This shared ecosystem works to improve speed and likelihood of success. It differs from the classic venture capital model, where investors simply distribute capital among ideas and teams, hoping one in five or ten might make it big.
+                            </p>
+
+                            <p className='latoFont'>and it’s best if these startups have a specific “ask” from the Studio such as “our team needs help
+                                building the full prototype” or “our startup needs beta testers and we don’t have the funds to
+                                promote and scale, hence- we need help with this.”
+
+                            </p>
                             <div className="">
-                                <Button variant="dark" className="text-white ms-3" id='HiredModelIdBackToAll' onClick={() => {AllParteners(props.AllParteners)}}>Back To View All </Button>
+                                <Button variant="dark" className="text-white mb-3" id='HiredModelIdBackToAll' onClick={() => {AllParteners(props.AllParteners)}}>Back To View All </Button>
 
                             </div>
 
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <img src={props.HiredModelImage} className='w-100' alt=""/>
+                        <img src={props.HiredModelImage} className='w-100 mt-3' alt=""/>
                     </div>
                 </div>
-                <div className="row py-3">
+                <div className="row py-3 justify-content-around">
                     {Parteners}
+                    {/*<div className="col-10 ">*/}
+                    {/*    <div className="row">*/}
+                    {/*       */}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </>

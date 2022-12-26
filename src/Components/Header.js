@@ -13,7 +13,7 @@ export default function Header(props) {
     })
     return (
         <>
-            <div className="container-fluid px-4" id='MainHeader' style={{background:"white", zIndex:2}}>
+            <div className="container-fluid px-4 py-2" id='MainHeader' style={{background:"white", zIndex:2}}>
                 <div className="row align-items-center justify-content-between">
                     <div className="col-md-3 col-6">
                         <div className="logo rubicFont d-flex py-1 ">

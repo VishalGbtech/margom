@@ -12,15 +12,10 @@ export default function HowWeWork(props) {
     return(
         <>
             <div className="container-fluid rubicFont EmergingBg " style={{paddingBottom:'4.5rem'}}>
-                <div className="row border-top border-light px-3 text-start">
+                <div className="row px-3 text-start">
                     <div className="col-12  px-md-5 pt-5 pb-4 text-white">
-                        <h1 className=''>How we Work</h1>
-                        <p className='latoFont w-75 HowWeWorkDetails'>We will after initial screening shortlist companies and engage with them for 90 days to evaluate
-                            them thoroughly. The post we onboard the companies in MARG'Om Studio in either of our 4 models.</p>
-                        <p className='latoFont w-75 HowWeWorkDetails'>Our mentors are guides as well as investors in our accelerator and will work closely with our
-                            portfolio companies. We will engage with these companies for one year working with companies in
-                            terms of technology marketing branding strategy finance, Governance, and Capability Building and
-                            evolving through growth enablers.
+                        <h1 className=''>Our patrons</h1>
+                        <p className='latoFont w-75 OurPatronsDetails'>Last 50 years, entrepreneurs who have been our guides role models and pillars for our Association
                         </p>
                     </div>
                     {images}

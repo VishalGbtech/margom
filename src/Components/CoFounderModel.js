@@ -25,9 +25,10 @@ export default function CoFounderModel(props) {
            }
 
             }
-            return <div className='col-md-4'>
+            return <div className='col-md-4 mb-3'>
                 <div className="PartnerWith border px-3 py-2 rounded" key={index}>
                     <h4>{value.PT}</h4>
+                    <h6 className='EntrepreneursSaying'>{value.EntrepreneursSaying}</h6>
                     <div className="text-end">
                         <Button variant="dark" size='sm'
                                 onClick={() => PageHandel(value.redirectPageId)}>{value.more}</Button>
@@ -40,10 +41,10 @@ export default function CoFounderModel(props) {
         <>
             <div className="container-fluid rubicFont " id='CoFounderModel' style={{display: props.display}}>
                 <div className=" row">
-                    <div className="col-md-6">
-                        <img src={props.model} className='w-75' alt=""/>
+                    <div className="col-md-5">
+                        <img src={props.model} className='w-100' alt=""/>
                     </div>
-                    <div className="col-md-6 text-start" style={{padding: '2rem 1rem'}}>
+                    <div className="col-md-7 text-start" style={{padding: '1rem 1rem'}}>
                         <div className="">
                             <h1 className='CoFounderModel '>Co-Founder Model</h1>
                             <p className='latoFont'><b>For Entrepreneurs Saying: </b> “I have an idea, but be mindful it takes different skills to grow and scale.</p>
@@ -55,7 +56,7 @@ export default function CoFounderModel(props) {
                             </p>
                             <div className="">
                                 {/*<Button variant="dark" className="text-white" >Learn More <FontAwesomeIcon className='ms-2' icon={props.arrowIcon} /></Button>*/}
-                                <Button variant="dark" className="text-white ms-3" id='CoPromoterModelBackToAll'
+                                <Button variant="dark" className="text-white" id='CoPromoterModelBackToAll'
                                         onClick={() => {
                                             AllParteners(props.AllParteners)
                                         }}>Back To View All </Button>
@@ -66,11 +67,12 @@ export default function CoFounderModel(props) {
                     </div>
                 </div>
                 <div className="row py-3 justify-content-around">
-                    <div className="col-10 ">
-                        <div className="row">
-                            {Parteners}
-                        </div>
-                    </div>
+                    {Parteners}
+                    {/*<div className="col-10 ">*/}
+                    {/*    <div className="row">*/}
+                    {/*        */}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                 </div>
             </div>

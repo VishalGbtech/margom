@@ -33,15 +33,15 @@ export default function PartnerShipModels(props) {
     }
 
     const PartenersArray = [
-        {PT: 'Co-Promoter Model', more: 'Learn More', redirectPageId: 'CoPromoterModel'},
-        {PT: 'Build Model', more: 'Learn More', redirectPageId: 'BuildModel'},
-        {PT: 'Hired Model', more: 'Learn More', redirectPageId: 'HiredModel'},
-        {PT: 'Co-Founder Model', more: 'Learn More', redirectPageId: 'CoFounderModel'}
+        {PT: 'Co-Promoter Model',EntrepreneursSaying:'I have an MVP but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives', more: 'Learn More', redirectPageId: 'CoPromoterModel'},
+        {PT: 'Build Model',EntrepreneursSaying:'I have a great idea and worked on MVP, but lacked specific resources and expertise to scale and grow.', more: 'Learn More', redirectPageId: 'BuildModel'},
+        {PT: 'Hired Model',EntrepreneursSaying:', I have an MVP, capital, and market to grow but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives. ', more: 'Learn More', redirectPageId: 'HiredModel'},
+        {PT: 'Co-Founder Model',EntrepreneursSaying:'I have an idea, but be mindful it takes different skills to grow and scale.', more: 'Learn More', redirectPageId: 'CoFounderModel'}
     ];
     localStorage.setItem("Parteners", JSON.stringify(PartenersArray));
 
     const Parteners = PartenersArray.map((value, index) => {
-        let learnBtn = <Button variant="dark" onClick={() => ToggleComponet(value.redirectPageId)}
+        let learnBtn = <Button variant="dark"  className='mb-2' onClick={() => ToggleComponet(value.redirectPageId)}
                                size='sm'>{value.more}</Button>;
         return <div className="border pt-2 px-3 mb-3 rounded PartnerWith" key={index}>
             <h2>{value.PT}</h2>
@@ -54,12 +54,10 @@ export default function PartnerShipModels(props) {
         <>
             <div className="container-fluid rubicFont" id='ourPartnership'
                  style={{background: '#bbbbbba3', padding: '2rem 3rem'}}>
-                <div className="row" id='PartnershipModel'>
-                    <div className="col-md-6 d-flex flex-column justify-content-between text-start">
-                        <h1 className='w-75 py-3'>Our
-                            Partnership
-                            Models</h1>
-                        <img src={props.dotImage} className='w-25' alt=""/>
+                <div className="row bgdotImage" id='PartnershipModel'>
+                    <div className=" col-md-6 text-start">
+                        <h1 className='py-3 w-100 ourPartnershipHeading' style={{fontSize:'2.5rem'}}>Our Partnership Models</h1>
+                        {/*<img src={props.dotImage} className='w-25' alt=""/>*/}
                     </div>
                     <div className="col-md-6 text-start">
                         {Parteners}
