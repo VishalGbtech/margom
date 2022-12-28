@@ -22,7 +22,7 @@ export default function  EcosystemOfNetwork(props) {
             <div className="container-fluid rubicFont EmergingBg">
                 <div className="row px-3 text-start">
                     <div className="col-12  px-5 pb-4 text-white">
-                        <h1 className='w-75 text-center mx-auto EcosystemHeading'>Team & Ecosystem of Network, Investments, and Associates.</h1>
+                        <h1 className='w-75 mt-4 mt-md-2 text-center mx-auto EcosystemHeading'>Team & Ecosystem of Network, Investments, and Associates.</h1>
                     </div>
                     {images}
                     <div className="">

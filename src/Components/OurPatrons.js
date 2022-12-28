@@ -11,7 +11,7 @@ export default function HowWeWork(props) {
     })
     return(
         <>
-            <div className="container-fluid rubicFont EmergingBg " style={{paddingBottom:'4.5rem'}}>
+            <div className="container-fluid rubicFont EmergingBg1 " style={{paddingBottom:'4.5rem'}}>
                 <div className="row px-3 text-start">
                     <div className="col-12  px-md-5 pt-5 pb-4 text-white">
                         <h1 className=''>Our patrons</h1>

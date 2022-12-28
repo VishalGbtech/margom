@@ -196,8 +196,6 @@ html {
   }
 }
 
-
-
 /*version 1.0 */
 
 
@@ -216,6 +214,12 @@ html {
   background-size: cover;
 }
 .EmergingBg{
+  background-image: url("./images/slideImage-3.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.EmergingBg1{
   background-image: url("./images/slideImage-3.jpg");
   background-repeat: no-repeat;
   background-position: top;
@@ -252,9 +256,9 @@ html {
   text-shadow: 1px -1px 1px black;
 }
 .WE_EXIST{
-  font-size: 5rem;
-  letter-spacing: -3px;
-  word-spacing: 15px;
+  font-size: 3.5rem;
+  /*letter-spacing: 1px;*/
+  /*word-spacing: 15px;*/
 }
 .CoFounderModel{
   font-size: 3rem;
@@ -265,6 +269,7 @@ html {
   color: #d74237;
   font-size: 3rem;
   width: 60%;
+  text-shadow: 3px -3px 3px black;
 }
 .PartnerWith{
   box-shadow: 0px 0px 3px 1px #0000006b;
@@ -309,14 +314,42 @@ button.owl-next {
 }
 
 @media only screen and (max-width: 600px) {
-  .ACCELERATED_GROWTH, .WE_EXIST {
-   font-size: 3rem;
+  .margomFont{
+    font-size: 4rem;
+    width: 100%;
+    align-self: center;
+  }
+  .bgImage{
+    background-image: url("./images/startupimage.png");
+    height: 100VH;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+  .EmergingBg{
+    background-image: url("./images/lookinfOR.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .EcosystemHeading,.hww,.CoFounderModel,.ourPartnershipHeading,.ACCELERATED_GROWTH, .WE_EXIST,.Emerging_India_Heading {
+   font-size: 2.6rem;
     width: 100% !important;
+    text-shadow: 3px -3px 3px black;
+  }
+  .CoFounderModel {
+    font-size: 2.6rem;
+    width: 100% !important;
+    text-shadow: 3px -3px 3px #c5c5c5;
+  }
+.speechImage{
+  background-position: 40% 25%;
+}
+  .WE_EXIST_MAIN{
+    padding: 1.5rem 1rem !important;
   }
 
-  .WE_EXIST_MAIN{
-    padding: 2rem !important;
-  }
   .Emerging_India_Heading{
     width: 100% !important;
     text-align: left;
@@ -331,8 +364,12 @@ button.owl-next {
     font-size: 2.3rem !important;
   }
   .bgdotImage{
-    background-position: right top;
-    background-size: 36%;
+    background-image: url('./images/partenership.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+    bottom;
+    /*background-size: 16%;*/
   }
   .CoFounderModel{
     font-size: 2.5rem !important;

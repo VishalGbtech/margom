@@ -57,7 +57,7 @@ export default function CoPromoterModel(props) {
                 <div className=" row">
 
                     <div className="col-md-7 text-start CoPromoterModelCol" style={{padding: '2rem'}}>
-                        <div className="">
+                        <div className="p-2">
                             <h1 className='CoFounderModel '>Co-Promoter Model</h1>
                             <p className='latoFont'><b>For Entrepreneur's Saying : </b> I have an MVP, but I need help to refine
                                 the product with connections, technology, marketing, raising capital, and growth/ scale

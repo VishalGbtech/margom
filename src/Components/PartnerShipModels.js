@@ -52,8 +52,7 @@ export default function PartnerShipModels(props) {
 
     return (
         <>
-            <div className="container-fluid rubicFont bgdotImage" id='ourPartnership'
-                 style={{padding: '2rem 3rem'}}>
+            <div className="container-fluid rubicFont bgdotImage" id='ourPartnership' style={{padding: '2rem 3rem'}}>
                 <div className="row " id='PartnershipModel'>
                     <div className=" col-md-6 text-start">
                         <h1 className='py-3 w-100 ourPartnershipHeading text-white' style={{fontSize:'2.5rem'}}>Our Partnership Models</h1>

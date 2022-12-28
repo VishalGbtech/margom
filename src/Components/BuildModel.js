@@ -50,10 +50,10 @@ export default function BuildModel(props) {
             <div className="container-fluid rubicFont " id='BuildModel' style={{ display:props.display, background: '#bbbbbbd9'}}>
                 <div className=" row">
                     <div className="col-md-5">
-                        <img src={props.promotpr} className='mx-2 my-4 w-100' alt=""/>
+                        <img src={props.promotpr} className=' my-4 w-100' alt=""/>
                     </div>
-                    <div className="BuildModelCol col-md-7 mt-md-0 mt-sm-3 text-start" >
-                        <div className="" style={{padding:'2rem'}}>
+                    <div className="BuildModelCol col-md-7 mt-md-0 mt-sm-3 text-start"  style={{padding: '2rem'}} >
+                        <div className="p-2" >
                             <h1 className='CoFounderModel '>Build Model</h1>
                             <p className='latoFont'><b>For Entrepreneurs Saying:</b> “ I have a great idea and worked on MVP, but lacked specific resources
                                 and expertise to scale and grow.</p>
