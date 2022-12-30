@@ -2,20 +2,21 @@ import React from "react";
 
 export default function HowWeWork(props) {
     const workImageArray = [props.w1, props.w2, props.w3];
-    const images = workImageArray.map((value, index)=>{
+    const images = workImageArray.map((value, index) => {
         return <div className="col-md-4 mb-4" key={index}>
-            <div className='rounded' style={{ boxShadow: '1px -1px 5px 0px lightgrey'}}>
+            <div className='rounded' style={{boxShadow: '1px -1px 5px 0px lightgrey'}}>
                 <img src={value} className='w-100 rounded' alt=""/>
             </div>
         </div>
     })
-    return(
+    return (
         <>
-            <div className="container-fluid rubicFont EmergingBg1 " style={{paddingBottom:'4.5rem'}}>
+            <div className="container-fluid rubicFont EmergingBg1 " style={{paddingBottom: '4.5rem'}}>
                 <div className="row px-3 text-start">
                     <div className="col-12  px-md-5 pt-5 pb-4 text-white">
                         <h1 className=''>Our patrons</h1>
-                        <p className='latoFont w-75 OurPatronsDetails'>Last 50 years, entrepreneurs who have been our guides role models and pillars for our Association.
+                        <p className='latoFont w-75 OurPatronsDetails'>These are the business visionaries who have been
+                            our aides, good examples, and support points for our Affiliation since last 50 years.
                         </p>
                     </div>
                     {images}
