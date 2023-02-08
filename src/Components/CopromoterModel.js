@@ -59,9 +59,8 @@ export default function CoPromoterModel(props) {
                     <div className="col-md-7 text-start CoPromoterModelCol" style={{padding: '2rem'}}>
                         <div className="p-2">
                             <h1 className='CoFounderModel '>Co-Promoter Model</h1>
-                            <p className='latoFont'><b>For Entrepreneur's Saying : </b> I have an MVP, but I need help to refine
-                                the product with connections, technology, marketing, raising capital, and growth/ scale
-                                objectives.”</p>
+                            <p className='latoFont'><b>For Entrepreneurs Saying :</b>It Differs from the Classic Co-Founder Model where they take significant equity at early stage once the proof of concept is established, they provide funds at early stage and connections controlling day to day working of founder using governance models.  </p>
+                            <p className='latoFont'>A typical ask from the studio is “our team has developed a prototype and we are good at core business but need help with all the aspects of business from Governance, Finance, Marketing to Strategy” or “what is the best way for us to scale our existing proof of concept, where we are sure of Markets and our Consumers.”</p>
 
                             <div className="mt-4">
                                 <Button variant="dark" className="text-white mb-3" id='CoPromoterModelBackToAll'

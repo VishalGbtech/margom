@@ -55,18 +55,9 @@ export default function BuildModel(props) {
                     <div className="BuildModelCol col-md-7 mt-md-0 mt-sm-3 text-start"  style={{padding: '2rem'}} >
                         <div className="p-2" >
                             <h1 className='CoFounderModel '>Build Model</h1>
-                            <p className='latoFont'><b>For Entrepreneurs Saying:</b> “ I have a great idea and worked on MVP, but lacked specific resources
-                                and expertise to scale and grow.</p>
+                            <p className='latoFont'><b>For Entrepreneurs Saying :</b>It differs from the classic venture capital model, where investors simply distribute capital among ideas and teams, hoping one in five or ten might make it big.</p>
 
-                            <p className='latoFont'>What founders in this position need is financial restructures, operational help, tech support, and
-                            connection opportunities. These businesses are often not yet adequately funded or have faced an
-                            adverse event or strategic choice. It’s common for Businesses in this situation to have a niche focus.</p>
-
-                            <p className='latoFont'>and it’s best if these startups have a specific “ask” from the Studio such as “our team needs help
-                            building the full prototype” or “our startup needs beta testers and we don’t have the funds to
-                            promote and scale, hence- we need help with this.”
-
-                        </p>
+                            <p className='latoFont'>A typical ask from the studio is “our team needs help building the full prototype” or “our startup needs beta testers and we don’t have the funds to promote and scale, hence- we need help with this.”</p>
                             <div className="">
                                 {/*<Button variant="dark" className="text-white" >Learn More <FontAwesomeIcon className='ms-2' icon={props.arrowIcon} /></Button>*/}
                                 <Button variant="dark" className="text-white" id='BuildModelBackToAll' onClick={() => {AllParteners(props.AllParteners)}}>Back To View All </Button>

@@ -3,9 +3,9 @@ import {Button} from "react-bootstrap";
 
 // import Components
 import CoPromoterModel from "./CopromoterModel";
-import CoFounderModel from "./CoFounderModel";
+import OutsourceModel from "./OutSourceModel";
 
-import HiredModel from './HiredModel';
+import MandateModel from './MandateModel';
 import BuildModel from './BuildModel';
 // import CoPromoterModel from "./CoPromoterModel";
 // import CoFounderModel from "./CoFounderModel";
@@ -33,10 +33,10 @@ export default function PartnerShipModels(props) {
     }
 
     const PartenersArray = [
-        {PT: 'Co-Promoter Model',EntrepreneursSaying:'I have an MVP but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives', more: 'Learn More', redirectPageId: 'CoPromoterModel'},
+        {PT: 'Mandate Model',EntrepreneursSaying:'I have an MVP, capital, and market to grow but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives. ', more: 'Learn More', redirectPageId: 'HiredModel'},
         {PT: 'Build Model',EntrepreneursSaying:'I have a great idea and worked on MVP, but lacked specific resources and expertise to scale and grow.', more: 'Learn More', redirectPageId: 'BuildModel'},
-        {PT: 'Hired Model',EntrepreneursSaying:'I have an MVP, capital, and market to grow but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives. ', more: 'Learn More', redirectPageId: 'HiredModel'},
-        {PT: 'Co-Founder Model',EntrepreneursSaying:'I have an idea, but be mindful it takes different skills to grow and scale it takes different skills to grow and scale.', more: 'Learn More', redirectPageId: 'CoFounderModel'}
+        {PT: 'Co-Promoter Model',EntrepreneursSaying:'I have an MVP but I need help with refining the product, with connections, with technology,  with marketing, raising capital, and with growth/ scale objectives', more: 'Learn More', redirectPageId: 'CoPromoterModel'},
+        {PT: 'Outsourced Model',EntrepreneursSaying:'I have an idea, but be mindful it takes different skills to grow and scale it takes different skills to grow and scale.', more: 'Learn More', redirectPageId: 'CoFounderModel'}
     ];
     localStorage.setItem("Parteners", JSON.stringify(PartenersArray));
 
@@ -64,8 +64,8 @@ export default function PartnerShipModels(props) {
                 </div>
                 <CoPromoterModel coPromoterModel={coPromoterModel} display='none' AllParteners='PartnershipModel'/>
                 <BuildModel promotpr={BuildModelImage} display='none' AllParteners='PartnershipModel'/>
-                <HiredModel HiredModelImage={HiredModelImage} display='none' AllParteners='PartnershipModel'/>
-                <CoFounderModel coFoundermodel={coFoundermodel} arrowIcon={faChevronRight} display='none'
+                <MandateModel HiredModelImage={HiredModelImage} display='none' AllParteners='PartnershipModel'/>
+                <OutsourceModel coFoundermodel={coFoundermodel} arrowIcon={faChevronRight} display='none'
                                 AllParteners='PartnershipModel'/>
             </div>
 

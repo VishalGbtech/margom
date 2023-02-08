@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Header(props) {
     const scollToRef = useRef();
-    const MenuArray = ['Home', 'Services', 'Associates', 'Blog', 'About' ];
+    const MenuArray = ['Home', 'Services', 'Associates', 'About' ];
     const menu = MenuArray.map((item, index)=>{
         return <li className='me-1 menuItem' key={index} onClick={() => scollToRef.current.scrollIntoView()} style={{cursor:'pointer'}}>{item}</li>
     })
@@ -27,7 +27,7 @@ export default function Header(props) {
                             <ul className='d-flex text-secondary justify-content-around latoFont list-unstyled mb-0 ps-4 w-100 '
                                 style={{fontWeight: 600}}>
                                 {menu}
-                                <li> <Button variant="dark" size='sm'>Sign Up</Button></li>
+                                <li> <Button variant="dark" size='sm'>Get in Touch</Button></li>
                             </ul>
                         </div>
                         <div className="d-block d-md-none">

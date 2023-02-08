@@ -15,8 +15,7 @@ export default function HowWeWork(props) {
                 <div className="row px-3 text-start">
                     <div className="col-12  px-md-5 pt-5 pb-4 text-white">
                         <h1 className=''>Our patrons</h1>
-                        <p className='latoFont w-75 OurPatronsDetails'>These are the business visionaries who have been
-                            our aides, good examples, and support points for our Affiliation since last 50 years.
+                        <p className='latoFont w-75 OurPatronsDetails'>We are honoured to be benefitted by the Wisdom of our mentors and Industry Stalwarts who have helped our vision through personal investment of their presence and association
                         </p>
                     </div>
                     {images}
